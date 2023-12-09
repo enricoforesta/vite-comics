@@ -1,12 +1,13 @@
 <script>
 import AppComponentNav from './components/ComponentHeader/AppComponentNav.vue';
 import AppComponentContent from './components/ComponentHeader/AppComponentContent.vue';
+import AppComponentBuy from './components/ComponetnMain/AppComponentBuy.vue';
 export default {
   name: "APP",
   components: {
     AppComponentNav,
     AppComponentContent,
-
+    AppComponentBuy,
   }
 }
 </script>
@@ -16,6 +17,9 @@ export default {
     <AppComponentNav />
     <AppComponentContent />
   </header>
+  <main>
+    <AppComponentBuy />
+  </main>
 </template>
 
 <style lang="scss">
