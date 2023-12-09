@@ -24,6 +24,9 @@ div {
     padding-bottom: 60px;
     background-color: black;
     color: $color-text-white;
-    cursor: pointer;
+
+    h3 {
+        cursor: pointer;
+    }
 }
 </style>

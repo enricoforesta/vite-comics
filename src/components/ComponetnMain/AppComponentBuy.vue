@@ -53,7 +53,7 @@ div.buy {
         display: flex;
         justify-content: space-between;
         padding: 40px 0;
-        color: white;
+        color: $color-text-white;
         gap: 10px;
 
         li {

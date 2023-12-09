@@ -77,8 +77,11 @@ export default {
     justify-content: space-between;
     @include padding-standard;
     padding-top: 30px;
-    padding-bottom: 15px;
     font-size: 12px;
+
+    .logo {
+        padding-bottom: 15px;
+    }
 
     .list {
         display: flex;
