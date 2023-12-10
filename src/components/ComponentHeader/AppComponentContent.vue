@@ -20,13 +20,14 @@ export default {
 
 div {
     @include padding-standard;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     background-color: black;
     color: $color-text-white;
 
     h3 {
         cursor: pointer;
+        font-size: 25px;
     }
 }
 </style>

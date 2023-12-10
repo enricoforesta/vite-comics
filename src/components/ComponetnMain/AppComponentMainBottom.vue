@@ -107,7 +107,7 @@ export default {
     <div class="container">
         <div class="content">
             <div v-for="list in lists" class="list">
-                <h3>{{ list.title }}</h3>
+                <h3>{{ list.title.toUpperCase() }}</h3>
                 <ul>
                     <li v-for="text in list.listContent"><a :href="text.link">{{ text.text }}</a></li>
                 </ul>
@@ -131,22 +131,23 @@ div.container {
     padding-bottom: 60px;
     position: relative;
     overflow: hidden;
+    height: 400px;
 
     div.content {
-        width: calc(100% / 2);
+        width: 40%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
         div.list {
-            width: calc(100% / 3);
+            // width: calc(100% / 3);
             display: flex;
-            flex-wrap: wrap;
             flex-direction: column;
             gap: 15px;
 
             li {
                 color: gray;
+                padding-bottom: 10px;
             }
         }
     }

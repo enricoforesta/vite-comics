@@ -76,7 +76,7 @@ export default {
     display: flex;
     justify-content: space-between;
     @include padding-standard;
-    padding-top: 30px;
+    padding-top: 15px;
     font-size: 12px;
 
     .logo {

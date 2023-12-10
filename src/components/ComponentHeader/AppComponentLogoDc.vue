@@ -16,7 +16,7 @@ export default {
 </template>
 <style scoped lang="scss">
 div {
-    width: 70px;
+    width: 80px;
     margin-right: 15px;
 
     img {

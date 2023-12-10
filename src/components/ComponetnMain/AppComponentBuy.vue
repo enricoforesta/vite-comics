@@ -36,7 +36,8 @@ export default {
                 <div class="image">
                     <img src="../../assets/img/buy-dc-power-visa.svg" alt="img">
                 </div>
-                <div class="content"> {{ content.title }}
+                <div class="content">
+                    <a href="#">{{ content.title.toUpperCase() }}</a>
                 </div>
             </li>
         </ul>
@@ -52,7 +53,7 @@ div.buy {
     ul {
         display: flex;
         justify-content: space-between;
-        padding: 40px 0;
+        padding: 60px 0;
         color: $color-text-white;
         gap: 10px;
 
@@ -60,6 +61,7 @@ div.buy {
             display: flex;
             align-items: center;
             gap: 10px;
+            font-size: 20px;
 
             div.image {
                 width: 45px;
