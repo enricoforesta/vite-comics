@@ -3,6 +3,7 @@ import AppComponentNav from './components/ComponentHeader/AppComponentNav.vue';
 import AppComponentContent from './components/ComponentHeader/AppComponentContent.vue';
 import AppComponentBuy from './components/ComponetnMain/AppComponentBuy.vue';
 import AppComponentMainBottom from './components/ComponetnMain/AppComponentMainBottom.vue';
+import AppComponentFooter from './components/ComponentFooter/AppComponentFooter.vue';
 export default {
   name: "APP",
   components: {
@@ -10,6 +11,7 @@ export default {
     AppComponentContent,
     AppComponentBuy,
     AppComponentMainBottom,
+    AppComponentFooter
   }
 }
 </script>
@@ -23,6 +25,9 @@ export default {
     <AppComponentBuy />
     <AppComponentMainBottom />
   </main>
+  <footer>
+    <AppComponentFooter />
+  </footer>
 </template>
 
 <style lang="scss">
