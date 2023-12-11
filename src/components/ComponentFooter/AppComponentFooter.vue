@@ -17,7 +17,8 @@ export default {
     </div>
 </template>
 <style scoped lang="scss">
-@use "../../style/variable.scss" as *;
+@use "../../style/partials/variable.scss" as *;
+@use "../../style/partials/mixin.scss" as *;
 
 div.footer {
     height: 110px;

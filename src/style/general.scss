@@ -1,25 +1,5 @@
-@use'./variable.scss' as *;
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #303030;
-}
-
-header {
-    background-color: $color-text-white;
-}
-
-li {
-    list-style: none;
-
-    a {
-        text-decoration: none;
-        color: currentColor;
-
-    }
-}
+@use'./partials/mixin.scss' as *;
+@use'./partials/reset.scss' as *;
+@use'./partials/typography.scss' as *;
+@use'./partials/variable.scss' as *;
+@use'./partials/common.scss' as *;

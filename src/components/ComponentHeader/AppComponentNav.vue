@@ -70,7 +70,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use'../../style/variable.scss' as *;
+@use'../../style/partials/mixin.scss' as *;
+@use'../../style/partials/variable.scss' as *;
 
 .navbar {
     display: flex;

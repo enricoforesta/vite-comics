@@ -6,23 +6,23 @@ export default {
             buyContents: [
                 {
                     title: "Digital Comics",
-                    path: "../../assets/img/buy-comics-digital-comics.png"
+                    path: "../../assets/img/buy-comics-digital-comics.png",
                 },
                 {
                     title: "DC Merchandise",
-                    path: "../../assets/img/buy-comics-merchandise.png"
+                    path: "../../assets/img/buy-comics-merchandise.png",
                 },
                 {
                     title: "Subscription",
-                    path: "../../assets/img/buy-comics-subscriptions.png"
+                    path: "../../assets/img/buy-comics-subscriptions.png",
                 },
                 {
                     title: "Comic Shop Locator",
-                    path: "../../assets/img/buy-comics-shop-locator.png"
+                    path: "../../assets/img/buy-comics-shop-locator.png",
                 },
                 {
                     title: "DC Power",
-                    path: "../../assets/img/buy-dc-power-visa.svg"
+                    path: "../../assets/img/buy-dc-power-visa.svg",
                 },
             ]
         }
@@ -34,7 +34,7 @@ export default {
         <ul>
             <li v-for='content in buyContents'>
                 <div class="image">
-                    <img src="../../assets/img/buy-dc-power-visa.svg" alt="img">
+                    <img :src="content.path" :alt="content.title">
                 </div>
                 <div class="content">
                     <a href="#">{{ content.title.toUpperCase() }}</a>
@@ -44,7 +44,8 @@ export default {
     </div>
 </template>
 <style scoped lang="scss">
-@use "../../style/variable.scss" as *;
+@use "../../style/partials/variable.scss" as *;
+@use "../../style/partials/mixin.scss" as *;
 
 div.buy {
     background-color: $color-bar;
