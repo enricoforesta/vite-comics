@@ -119,7 +119,7 @@ div.container {
     }
 
     .product {
-        width: 1200px;
+        @include padding-standard;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -142,7 +142,7 @@ div.container {
             background-color: $color-bar;
             position: absolute;
             top: - 20px;
-            left: 50px;
+            left: 200px;
 
         }
 
