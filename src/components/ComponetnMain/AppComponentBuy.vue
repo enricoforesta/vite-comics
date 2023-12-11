@@ -26,7 +26,7 @@ export default {
                 },
             ]
         }
-    }
+    },
 }
 </script>
 <template>
@@ -34,7 +34,8 @@ export default {
         <ul>
             <li v-for='content in buyContents'>
                 <div class="image">
-                    <img :src="content.path" :alt="content.title">
+                    <img src="../../assets/img/buy-comics-digital-comics.png" alt="">
+                    <!-- <img :src="content.path" :alt="content.title"> -->
                 </div>
                 <div class="content">
                     <a href="#">{{ content.title.toUpperCase() }}</a>

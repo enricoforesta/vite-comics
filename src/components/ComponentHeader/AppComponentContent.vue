@@ -148,6 +148,7 @@ div.container {
 
         .comic {
             width: calc((100% / 6) - 20px);
+            cursor: pointer;
 
             img {
                 width: 100%;
