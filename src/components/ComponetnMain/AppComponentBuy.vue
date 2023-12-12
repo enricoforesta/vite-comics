@@ -27,6 +27,11 @@ export default {
             ]
         }
     },
+    methods: {
+        getImagePath: function (imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        },
+    }
 }
 </script>
 <template>
@@ -34,8 +39,8 @@ export default {
         <ul>
             <li v-for='content in buyContents'>
                 <div class="image">
-                    <img src="../../assets/img/buy-comics-digital-comics.png" alt="">
-                    <!-- <img :src="content.path" :alt="content.title"> -->
+                    <!-- <img src="../../assets/img/buy-comics-digital-comics.png" alt=""> -->
+                    <img :src="getImagePath(content.path)" :alt="content.title">
                 </div>
                 <div class="content">
                     <a href="#">{{ content.title.toUpperCase() }}</a>
@@ -54,6 +59,7 @@ div.buy {
 
     ul {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 60px 0;
         color: $color-text-white;
